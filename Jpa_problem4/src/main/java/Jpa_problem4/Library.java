@@ -21,14 +21,14 @@ public class Library {
 		EntityManager entitymanager = emf.createEntityManager();
 		Teacher teach = new Teacher();
 		teach.setTeacherId(1);
-		teach.setTeacherName("Kvr Prasad");
-		teach.setSubject("PSOC");
+		teach.setTeacherName("jenny");
+		teach.setSubject("Physics");
 		
 		List<Student> mylist = new ArrayList<Student>();
-		mylist.add(new Student("Vinodh", "8th semester", teach));
-		mylist.add(new Student("Jhostna", "8th semester", teach));
-		mylist.add(new Student("Kiran", "6th semester", teach));
-		mylist.add(new Student("Mukesh", "2nd semester", teach));
+		mylist.add(new Student("john", "8th semester", teach));
+		mylist.add(new Student("peter", "6th semester", teach));
+		mylist.add(new Student("joe", "4th semester", teach));
+		mylist.add(new Student("jane", "2nd semester", teach));
 		teach.setList(mylist);
 		
 		entitymanager.getTransaction().begin();
